@@ -62,4 +62,6 @@ ro.recovery.ui.margin_height=48
 persist.vendor.ssr.restart_level=ALL_ENABLE
 
 # WiFi
+persist.debug.wfd.enable=1
+persist.sys.wfd.nohdcp=1
 wifi.interface=wlan0
