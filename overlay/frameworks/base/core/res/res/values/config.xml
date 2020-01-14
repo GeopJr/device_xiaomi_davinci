@@ -183,11 +183,6 @@
          that can be set by the user. -->
     <integer name="config_screenBrightnessDim">1</integer>
 
-    <!-- Screen brightness used to dim the screen while dozing in a very low power state.
-         May be less than the minimum allowed brightness setting
-         that can be set by the user. -->
-    <integer name="config_screenBrightnessDoze">17</integer>
-
     <!-- Minimum screen brightness setting allowed by the power manager.
          The user is forbidden from setting the brightness below this level. -->
     <integer name="config_screenBrightnessSettingMinimum">2</integer>
@@ -618,4 +613,8 @@
     <integer-array name="config_keyboardTapVibePattern">
         <item>20</item>
     </integer-array>
+
+    <!-- True if the display hardware only has brightness buckets rather than a full range of
+         backlight values -->
+    <bool name="config_displayBrightnessBucketsInDoze">true</bool>
 </resources>
