@@ -587,4 +587,7 @@
     <bool name="config_statusBarBurnInProtection">true</bool>
     <bool name="config_multiColorBatteryLed">false</bool>
 
+    <!-- Enable pocket mode -->
+    <bool name="config_proxiSensorWakupCheck">true</bool> 
+
 </resources>
