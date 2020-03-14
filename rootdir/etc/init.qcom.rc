@@ -111,6 +111,10 @@ on init
     write /dev/cpuset/application/background/cpus 0-7
     write /dev/cpuset/application/cpus 0-7
 
+    # Allow system to read measured screen FPS
+    chown system graphics /sys/class/drm/card0/sde-crtc-0/measured_fps
+    chmod 0660 /sys/class/drm/card0/sde-crtc-0/measured_fps
+
 on charger
     setprop sys.usb.controller a600000.dwc3
     setprop sys.usb.configfs 1
@@ -163,10 +167,6 @@ on property:sys.boot_completed=1
 
 service vendor.power-hal-1-2 /system/bin/true
     disabled
-
-    # Allow system to read measured screen FPS
-    chown system graphics /sys/class/drm/card0/sde-crtc-0/measured_fps
-    chmod 0660 /sys/class/drm/card0/sde-crtc-0/measured_fps
 
 on boot
     write /sys/class/thermal/thermal_message/sconfig 10
