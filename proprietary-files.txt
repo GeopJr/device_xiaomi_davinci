@@ -56,6 +56,10 @@ product/lib64/libdpmtcm.so
 vendor/lib/liboemcrypto.so:product/vendor_overlay/29/lib/liboemcrypto.so|6f12eff0ea54c8d3dcbbe90396e2494528706cf1
 vendor/lib64/liboemcrypto.so:product/vendor_overlay/29/lib64/liboemcrypto.so|252479cc9952ffdb3fe77e044b7a6cc91e48e488
 
+# DRM - Widevine
+vendor/lib/liboemcrypto.so:product/vendor_overlay/29/lib/liboemcrypto.so|d1d433d460266194f1385df9fe1dce5c2eeb4337
+vendor/lib64/liboemcrypto.so:product/vendor_overlay/29/lib64/liboemcrypto.so|55092595072548104cf66f7a610f53d65c04dd65
+
 # FM
 lib64/fm_helium.so
 lib64/libfm-hci.so
