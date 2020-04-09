@@ -2,7 +2,7 @@ import /system/etc/init/init.safailnet.rc
 
 on boot
     # Thermal Profile
-    write /sys/class/thermal/thermal_message/sconfig 0
+    write /sys/class/thermal/thermal_message/sconfig 10
 
     # Allow system to modify exposure adjustment state
     chown system system /sys/devices/platform/soc/soc:qcom,dsi-display/msm_fb_ea_enable
