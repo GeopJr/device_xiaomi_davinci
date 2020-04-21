@@ -50,6 +50,7 @@ PRODUCT_COPY_FILES += \
 
 # Common init scripts
 PRODUCT_PACKAGES += \
+    init.mi_thermald.rc \
     init.qcom.rc \
     init.safailnet.rc \
     ueventd.qcom.rc \
