@@ -19,15 +19,18 @@ PRODUCT_NAME := bootleg_davinci
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=davinci
 
 # Bootleg
-TARGET_PICK_BOOTANIMATION=6
+TARGET_PICK_BOOTANIMATION:=6
 
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    ro.bootleggers.maintainer=GeopJr
+DEVICE_MAINTAINERS := "GeopJr"
+
+BOOTLEGGERS_BUILD_TYPE := Shishufied 
+
+# Even if we don't have notch, this centers wallpaper
+BOOTLEGGERS_NOTCHED := true
 
 # Inherit from custom vendor
-$(call inherit-product, vendor/MiuiCamera/config.mk)
+$(call inherit-product, vendor/ANXCamera/config.mk)
