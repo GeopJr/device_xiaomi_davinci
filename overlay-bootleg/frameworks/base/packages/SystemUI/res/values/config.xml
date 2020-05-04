@@ -19,7 +19,7 @@
     <integer name="config_maxVisibleNotificationIconsWhenDark">7</integer>
 
     <!-- Color of the FOD view -->
-    <color name="config_fodColor">#00ffff</color>
+    <color name="config_fodColor">#40E0D0</color>
 
     <!-- Whether the binned brightness sensor reports a value of 0 on proximity
          near events -->
