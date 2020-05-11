@@ -56,6 +56,10 @@ PRODUCT_PACKAGES += \
     ueventd.qcom.rc \
     init.power.rc
 
+# Camera
+PRODUCT_PACKAGES += \
+    Snap
+
 # Display
 PRODUCT_PACKAGES += \
     libdisplayconfig \
